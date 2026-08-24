@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111814" />
+    <meta
+      name="description"
+      content="ХАТА.ON — тепло, світло, зв'язок та автономність для дому під час відключень."
+    />
+    <meta property="og:title" content="ХАТА.ON — коли світло OFF" />
+    <meta
+      property="og:description"
+      content="Практичні рішення для тепла, світла та стабільного Wi‑Fi."
+    />
+    <title>ХАТА.ON — коли світло OFF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#catalog">До каталогу</a>
+
+    <div class="announcement">
+      <span>Доставка по Україні Новою поштою</span>
+      <span class="announcement-dot" aria-hidden="true"></span>
+      <span>Оплата при отриманні</span>
+    </div>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="ХАТА.ON — на головну">
+        <span class="brand-mark">ХАТА<span>.ON</span></span>
+        <span class="brand-tagline">коли світло OFF</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Головна навігація">
+        <a href="#catalog">Каталог</a>
+        <a href="#sets">Набори</a>
+        <a href="#how">Як замовити</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <button class="cart-button" id="open-cart" type="button" aria-label="Відкрити кошик">
+        <span class="cart-icon" aria-hidden="true"></span>
+        <span>Кошик</span>
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> Дім залишається ON</div>
+          <h1>Коли світло <em>OFF,</em><br />твоя ХАТА — <strong>ON.</strong></h1>
+          <p>
+            Тепло, світло, Wi‑Fi та заряд у готових рішеннях для відключень.
+            Без зайвого — лише те, що справді допомагає вдома.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#catalog">Обрати рішення</a>
+            <a class="text-link" href="#sets">Дивитися готові набори <span>→</span></a>
+          </div>
+          <div class="trust-row" aria-label="Переваги магазину">
+            <div><b>0 ₴</b><span>передоплати</span></div>
+            <div><b>1–3 дні</b><span>відправка</span></div>
+            <div><b>14 днів</b><span>на повернення*</span></div>
+          </div>
+        </div>
+
+        <div class="hero-scene" aria-label="Рішення для автономного дому">
+          <div class="glow glow-one"></div>
+          <div class="glow glow-two"></div>
+          <div class="scene-card scene-card-main">
+            <span class="scene-label">ХІТ СЕЗОНУ</span>
+            <div class="scene-device power-station">
+              <div class="screen"><span>88</span><small>%</small></div>
+              <i></i><i></i><i></i>
+            </div>
+            <div class="scene-meta">
+              <span>Автономність</span>
+              <b>для всього дому</b>
+            </div>
+          </div>
+          <div class="scene-card scene-card-small lamp-card">
+            <div class="mini-lamp"><span></span></div>
+            <p><b>Світло</b><br />без розетки</p>
+          </div>
+          <div class="scene-card scene-card-small wifi-card">
+            <div class="wifi-signal"><i></i><i></i><i></i></div>
+            <p><b>Wi‑Fi</b><br />працює далі</p>
+          </div>
+          <div class="status-pill"><span></span> Усе під контролем</div>
+        </div>
+      </section>
+
+      <section class="problem-strip" aria-label="Допомагаємо під час відключень">
+        <div><span>01</span><p><b>Зникає Wi‑Fi?</b> Підтримай роутер без перезавантаження.</p></div>
+        <div><span>02</span><p><b>Темно в коридорі?</b> Датчик руху ввімкне світло сам.</p></div>
+        <div><span>03</span><p><b>Холодно вдома?</b> USB‑тепло працює від power bank.</p></div>
+      </section>
+
+      <section class="catalog section" id="catalog">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">ВИБІР ХАТА.ON</span>
+            <h2>Що потрібно саме тобі?</h2>
+          </div>
+          <p>Зібрали компактний каталог без випадкових товарів — тільки рішення для реальних сценаріїв.</p>
+        </div>
+
+        <div class="filters" id="filters" role="group" aria-label="Фільтр товарів">
+          <button class="filter-button active" type="button" data-filter="all">Усе</button>
+          <button class="filter-button" type="button" data-filter="internet">Wi‑Fi</button>
+          <button class="filter-button" type="button" data-filter="light">Світло</button>
+          <button class="filter-button" type="button" data-filter="warmth">Тепло</button>
+          <button class="filter-button" type="button" data-filter="power">Заряд</button>
+        </div>
+
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="set-section section" id="sets">
+        <div class="set-visual" aria-hidden="true">
+          <div class="blanket-stack"><i></i><i></i><i></i></div>
+          <div class="set-bank"><span>100</span><small>%</small></div>
+          <div class="set-light"></div>
+          <span class="set-orbit orbit-one"></span>
+          <span class="set-orbit orbit-two"></span>
+        </div>
+        <div class="set-copy">
+          <span class="section-kicker">ГОТОВИЙ НАБІР</span>
+          <h2>Теплий вечір</h2>
+          <p>Три речі, які разом закривають головний сценарій відключення: зігрітися, зарядити телефон і бачити кожен крок.</p>
+          <ul>
+            <li><span>✓</span> USB‑плед із 5 зонами нагріву</li>
+            <li><span>✓</span> Power bank Awei PA12 30 000 mAh</li>
+            <li><span>✓</span> Світильник 50 LED із датчиком руху</li>
+          </ul>
+          <div class="set-price"><span>Окремо 2 597 ₴</span><b>2 199 ₴</b></div>
+          <button class="button button-primary" type="button" data-add-product="warm-evening">Додати набір у кошик</button>
+          <small>Економія 398 ₴</small>
+        </div>
+      </section>
+
+      <section class="how section" id="how">
+        <div class="section-heading compact">
+          <div>
+            <span class="section-kicker">ПРОСТО І СПОКІЙНО</span>
+            <h2>Як замовити</h2>
+          </div>
+        </div>
+        <div class="steps">
+          <article><span>1</span><h3>Обери</h3><p>Додай потрібні товари або готовий набір у кошик.</p></article>
+          <article><span>2</span><h3>Підтвердь</h3><p>Залиш номер телефону та перевір склад замовлення.</p></article>
+          <article><span>3</span><h3>Отримай</h3><p>Ми підтвердимо наявність і відправимо Новою поштою.</p></article>
+        </div>
+      </section>
+
+      <section class="proof section">
+        <div class="proof-copy">
+          <span class="section-kicker">НАШ ПРИНЦИП</span>
+          <h2>Менше обіцянок.<br />Більше чесних відповідей.</h2>
+          <p>Автономність залежить від підключених пристроїв, режиму роботи й температури. Тому ми не вигадуємо «магічні години», а пояснюємо, чого очікувати у вашому сценарії.</p>
+        </div>
+        <div class="proof-card">
+          <span class="proof-check">✓</span>
+          <div><b>Перевірено ХАТА.ON</b><p>Зрозумілі характеристики, сумісність і чесні застереження до покупки.</p></div>
+        </div>
+      </section>
+
+      <section class="faq section" id="faq">
+        <div class="section-heading compact">
+          <div>
+            <span class="section-kicker">ВАРТО ЗНАТИ</span>
+            <h2>Питання й відповіді</h2>
+          </div>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Чи можна оплатити при отриманні?<span>+</span></summary>
+            <p>Так, доступна післяплата у відділенні Нової пошти. Перевізник може стягувати комісію за переказ коштів.</p>
+          </details>
+          <details>
+            <summary>Скільки працюватиме Mini UPS із моїм роутером?<span>+</span></summary>
+            <p>Час залежить від споживання роутера, ONU та обраної напруги. Перед замовленням надішліть фото блоків живлення — ми допоможемо перевірити сумісність.</p>
+          </details>
+          <details>
+            <summary>Чи потрібен power bank для USB‑пледа?<span>+</span></summary>
+            <p>Так. Плед працює від USB 5V; для стабільного нагріву потрібен power bank із відповідною силою струму. Точні вимоги уточнюємо для конкретної моделі.</p>
+          </details>
+          <details>
+            <summary>Чи можна повернути товар?<span>+</span></summary>
+            <p>Повернення товару належної якості можливе у строки та на умовах, передбачених законодавством України, якщо товар не використовувався й збережено комплектність.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <div><span class="section-kicker">ПОЧНИ З ОДНОГО РІШЕННЯ</span><h2>Нехай дім залишається ON.</h2></div>
+        <a class="button button-light" href="#catalog">Перейти до каталогу</a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-main">
+        <div>
+          <a class="brand footer-brand" href="#top"><span class="brand-mark">ХАТА<span>.ON</span></span><span class="brand-tagline">коли світло OFF</span></a>
+          <p>Тепло. Світло. Зв’язок.<br />Автономність.</p>
+        </div>
+        <div><b>Магазин</b><a href="#catalog">Каталог</a><a href="#sets">Готові набори</a><a href="#how">Доставка й оплата</a></div>
+        <div><b>Допомога</b><a href="#faq">Питання й відповіді</a><a href="#faq">Повернення</a><button class="footer-contact" id="contact-button" type="button">Контакти</button></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year"></span> ХАТА.ON</span><span>Ціни та наявність підтверджуємо при замовленні</span></div>
+    </footer>
+
+    <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-labelledby="cart-title">
+      <div class="drawer-head">
+        <div><span>ТВОЄ ЗАМОВЛЕННЯ</span><h2 id="cart-title">Кошик</h2></div>
+        <button class="icon-button" id="close-cart" type="button" aria-label="Закрити кошик">×</button>
+      </div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-empty" id="cart-empty">
+        <div class="empty-icon">ON</div><h3>Кошик поки порожній</h3><p>Додай рішення, яке зробить відключення спокійнішим.</p>
+      </div>
+      <div class="cart-footer" id="cart-footer" hidden>
+        <div class="cart-total"><span>Разом</span><b id="cart-total">0 ₴</b></div>
+        <button class="button button-primary full" id="checkout-button" type="button">Оформити замовлення</button>
+        <small>Наявність і фінальну суму підтвердимо перед відправкою.</small>
+      </div>
+    </aside>
+
+    <dialog class="checkout-dialog" id="checkout-dialog">
+      <form id="checkout-form" method="dialog">
+        <div class="dialog-head">
+          <div><span>МАЙЖЕ ГОТОВО</span><h2>Оформлення</h2></div>
+          <button class="icon-button" value="cancel" formmethod="dialog" aria-label="Закрити">×</button>
+        </div>
+        <label>Ім’я<input id="customer-name" name="name" autocomplete="name" required placeholder="Як до вас звертатися" /></label>
+        <label>Телефон<input id="customer-phone" name="phone" autocomplete="tel" inputmode="tel" required placeholder="+380 __ ___ __ __" /></label>
+        <label>Місто та відділення Нової пошти<input id="customer-delivery" name="delivery" autocomplete="address-level2" required placeholder="Наприклад: Київ, відділення №12" /></label>
+        <label>Коментар<textarea id="customer-comment" name="comment" rows="3" placeholder="За потреби"></textarea></label>
+        <div class="order-preview" id="order-preview"></div>
+        <button class="button button-primary full" type="submit">Підготувати замовлення</button>
+        <p class="form-note">Після натискання можна буде надіслати готове замовлення через зручний месенджер або скопіювати текст.</p>
+      </form>
+    </dialog>
+
+    <dialog class="result-dialog" id="result-dialog">
+      <div class="result-content">
+        <button class="icon-button result-close" id="result-close" type="button" aria-label="Закрити">×</button>
+        <div class="result-mark">✓</div>
+        <span>ЗАМОВЛЕННЯ ПІДГОТОВЛЕНО</span>
+        <h2>Залишилося надіслати</h2>
+        <p>Натисни «Поділитися» й обери чат магазину або скопіюй текст замовлення.</p>
+        <div class="result-actions">
+          <button class="button button-primary full" id="share-order" type="button">Поділитися</button>
+          <button class="button button-outline full" id="copy-order" type="button">Скопіювати текст</button>
+        </div>
+        <small id="copy-status" role="status"></small>
+      </div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="store-config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
