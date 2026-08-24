@@ -2,7 +2,9 @@
 
 Адаптивний магазин рішень для тепла, світла, зв’язку та автономності під час відключень.
 
-**Сайт:** https://pikushkristina-art.github.io/hata-on/
+**Основний сайт:** https://hata-on.pages.dev/
+
+**Резервна адреса:** https://pikushkristina-art.github.io/hata-on/
 
 ## Що працює
 
